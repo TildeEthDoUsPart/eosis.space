@@ -1,0 +1,12 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.commandLine {
+    display: flex;
+  }
+
+.commandLine input[type="text"] {
+    flex: 1;
+    margin-left: 5px;
+  }

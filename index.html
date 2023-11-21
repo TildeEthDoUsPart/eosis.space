@@ -3,28 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>soon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>eosis.space</title>
 </head>
-<body style="background-color: black;">
-    <div class="soon">
-        <span style="font-family: 'Inter';font-size: x-large; color: #ffffff;"> dev </span>
-    </div>
-    
-    
-    
-    <style>
-        .soon {
-          display: flex;
-          width: 100vw;
-          height: 100vh;
-          justify-content: center;
-          align-items: center;
-        }
-        
-    </style>
+<body>
+    <div id="commandDisplay"></div>
+    <div class="commandLine">
+        <label id="commandPrefix">jsp@eosis.space$ </label>
+        <input id="commandBox" type="text">
+      </div>
+
+
+      <script src="commands.js"></script>
+      <script src="main.js"></script>
 </body>
 </html>
