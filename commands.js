@@ -1,3 +1,8 @@
+error = [
+    "<br>",
+    "Command unrecongized. Try help for a list of commands"
+]
+
 about = [
     "<br>",
     "hello",
@@ -12,4 +17,14 @@ cat = [
     `&nbsp/\\_/\\ `,
     `( o.o ) `,
     `&nbsp> ^ < `
+]
+
+motd = [
+    "<br>",
+    `&nbsp|\\_/| `,
+    `&nbsp(. .) `,
+    `&nbsp&nbsp=w= (\\ `,
+    `&nbsp/ ^ \\// `,
+    `(|| ||) `,
+    `,""_""_ . `
 ]
