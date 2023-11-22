@@ -1,6 +1,5 @@
 body {
     font-family: cursor, monospace;
-    caret-shape: block;
 }
 #terminal {
     position: fixed;
@@ -23,5 +22,8 @@ body {
   }
 
   #commandBox{
-    caret-color: aqua;
+  }
+
+  #commandBox::after {
+    content: "mdr";
   }

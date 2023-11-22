@@ -1,25 +1,22 @@
 let commands = {
     "about" : about,
-    "cat" : cat,
-    "zerator" : zerator,
+    "cat" : cat, //secret
+    "zerator" : zerator, //secret
     "motd" : motd,
-    "neofetch" : NOT_IMPLEMENTED_YET,
+    "neofetch" : NOT_IMPLEMENTED_YET, //secret
     "projects" : NOT_IMPLEMENTED_YET,
     "error" : error,
-    "contact" : NOT_IMPLEMENTED_YET,
     "clear" : NOT_IMPLEMENTED_YET,
-    "date" : NOT_IMPLEMENTED_YET,
-    "donate" : NOT_IMPLEMENTED_YET,
-    "help" : NOT_IMPLEMENTED_YET,
+    "date" : NOT_IMPLEMENTED_YET, // secret
+    "help" : help,
+    "repo" : repo,
     "history" : NOT_IMPLEMENTED_YET,
-    "whoami" : NOT_IMPLEMENTED_YET,
+    "whoami" : whoami, // secret
     "socials" : NOT_IMPLEMENTED_YET,
     "skills" : NOT_IMPLEMENTED_YET,
-    "setup" : NOT_IMPLEMENTED_YET,
-    "blog" : NOT_IMPLEMENTED_YET, //reserved for later use
-    "weather" : NOT_IMPLEMENTED_YET, //reserved for later use
-    "pokedex" : NOT_IMPLEMENTED_YET, //reserved for later use
-    "tinyspace" : NOT_IMPLEMENTED_YET, //reserved for later use
+    "blog" : blog,
+    "weather" : weather, //reserved for later use
+    "tinyspace" : tinyspace, //reserved for later use
 }
 
 
@@ -28,21 +25,31 @@ let commandDisplay = $('#commandDisplay')
 let commandPrefix = '<label id="commandPrefix">visitor@eosis.space:~$ </label>'
 
 let commandHistory = []
+let historyIndex = -1
 
 
-commandBox.on("keypress",function(evt) {
+commandBox.on("keydown",function(evt) {
     if (evt.keyCode == 13){
-        console.log("tg")
-        commandHistory.push(commandBox.val())
-        console.log(commandHistory[commandHistory.length-1] + "will eb setn to val")
-        submitCommand(commandBox.val(),commandHistory[commandHistory.length-1])
+        if (commandBox.val() != ""){
+            commandHistory.unshift(commandBox.val())
+            submitCommand(commandBox.val(),commandHistory[commandHistory.length-1])
+        }
+    } else if (evt.keyCode == 38){
+        evt.preventDefault()
+        historyIndex += 1
+        commandBox.val(commandHistory[historyIndex])
+    } else if (evt.keyCode == 40){
+        evt.preventDefault()
+        historyIndex -= 1
+        commandBox.val(commandHistory[historyIndex])
+    } else {
+        historyIndex = -1
     }
 })
 
 
 function submitCommand(command,value){
     commandBox.val("")
-    console.log(command in commands)
     if (command in commands){
         print_command(command,value)
     } else {
@@ -51,10 +58,11 @@ function submitCommand(command,value){
 }
 
 function print_command(command,value){
-    console.log(value + "got value")
     commandDisplay.append(commandPrefix + value + "<br><br>")
     commands[command].map((line) => {
-        console.log(line)
+        if (line.split(' ')[0] == "&link"){
+            sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
+        }
         commandDisplay.append(line + "<br>")
     })
     commandDisplay.append("<br>")
@@ -62,5 +70,10 @@ function print_command(command,value){
     commandBox.get(0).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
 
-print_command("motd","motd")
+sleep(100).then(() => {print_command("motd","motd")})
+console.log("%cDid you know there are 5 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
+console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 2 are based off of eosis's personal interests (c../z......).","font-size:10px;color:grey")
