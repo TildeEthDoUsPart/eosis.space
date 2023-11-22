@@ -12,7 +12,7 @@ about = [
 
 cat = [
     `&nbsp/\\_/\\ `,
-    `( o.o ) &nbsp&nbsp < meow :3`,
+    `( o.o ) &nbsp < <span id="meow">meow :3</span>`,
     `&nbsp> ^ < `
 ]
 
@@ -21,15 +21,39 @@ motd = [
     `&nbsp(. .) &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp___ &nbsp____  &nbsp_____(_)____`,
     `&nbsp&nbsp=w= (\\ &nbsp&nbsp&nbsp  &nbsp/ _ \\/ __ \\/ ___/ / ___/`,
     `&nbsp/ ^ \\// &nbsp&nbsp&nbsp / &nbsp__/ /_/ (__  &nbsp) (__ &nbsp) `,
-    `(|| ||) &nbsp&nbsp&nbsp&nbsp \\___/\\____/____/_/____/  `,
+    `(|| ||) &nbsp&nbsp&nbsp&nbsp \\___/\\____/____/_/____/  &nbsp v0.3`,
     `,""_""_ .  `,
     "Welcome to my terminal !",
     "Type 'help' to get a list of all available commands.",
     "---",
-    "<br>",
+    " ",
     "This site is open-source ! Type the 'repo' command to get to the repository"
 ]
 
-test = [
-    "<span>idk bro</span>"
+NOT_IMPLEMENTED_YET = [
+    "Command not implemented yet."
+]
+
+zerator = [
+    "    &nbsp &nbsp &nbsp @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@    ",
+    "    &nbsp &nbsp @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@      ",
+    "    &nbsp @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@         ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                  @@@@@@@@@@@@           ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                @@@@@@@@@@@@             ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp              @@@@@@@@@@@@               ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp             @@@@@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp          @@@@@@@@@@@@                    ",
+    "    &nbsp &nbsp &nbsp &nbsp         @@@@@@@@@@@@                      ",
+    "    &nbsp &nbsp &nbsp     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+    "    &nbsp &nbsp    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   ",
+    "    &nbsp @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@       ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@@@                 ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@@@                   ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@@@                     ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @@@                       ",
+    "    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp                     @                        ",
 ]

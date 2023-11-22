@@ -1,17 +1,31 @@
-
 let commands = {
     "about" : about,
     "cat" : cat,
+    "zerator" : zerator,
     "motd" : motd,
-    "projects" : "github",
+    "neofetch" : NOT_IMPLEMENTED_YET,
+    "projects" : NOT_IMPLEMENTED_YET,
     "error" : error,
-    "test" : test
+    "contact" : NOT_IMPLEMENTED_YET,
+    "clear" : NOT_IMPLEMENTED_YET,
+    "date" : NOT_IMPLEMENTED_YET,
+    "donate" : NOT_IMPLEMENTED_YET,
+    "help" : NOT_IMPLEMENTED_YET,
+    "history" : NOT_IMPLEMENTED_YET,
+    "whoami" : NOT_IMPLEMENTED_YET,
+    "socials" : NOT_IMPLEMENTED_YET,
+    "skills" : NOT_IMPLEMENTED_YET,
+    "setup" : NOT_IMPLEMENTED_YET,
+    "blog" : NOT_IMPLEMENTED_YET, //reserved for later use
+    "weather" : NOT_IMPLEMENTED_YET, //reserved for later use
+    "pokedex" : NOT_IMPLEMENTED_YET, //reserved for later use
+    "tinyspace" : NOT_IMPLEMENTED_YET, //reserved for later use
 }
 
 
 let commandBox = $('#commandBox')
 let commandDisplay = $('#commandDisplay')
-let commandPrefix = '<label id="commandPrefix">jsp@eosis.space:~$ </label>'
+let commandPrefix = '<label id="commandPrefix">visitor@eosis.space:~$ </label>'
 
 let commandHistory = []
 
@@ -31,10 +45,8 @@ function submitCommand(command,value){
     console.log(command in commands)
     if (command in commands){
         print_command(command,value)
-        prepare_commandBox()
     } else {
         print_command("error",value)
-        prepare_commandBox()
     }
 }
 
@@ -46,11 +58,9 @@ function print_command(command,value){
         commandDisplay.append(line + "<br>")
     })
     commandDisplay.append("<br>")
-}
-
-function prepare_commandBox(){
     commandBox.focus()
     commandBox.get(0).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
+
 
 print_command("motd","motd")

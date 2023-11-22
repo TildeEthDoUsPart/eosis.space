@@ -1,5 +1,6 @@
 body {
     font-family: cursor, monospace;
+    caret-shape: block;
 }
 #terminal {
     position: fixed;
@@ -15,4 +16,12 @@ body {
 #commandLine input[type="text"] {
     flex: 1;
     margin-left: 5px;
+  }
+
+  #meow {
+    color: #d162a4;
+  }
+
+  #commandBox{
+    caret-color: aqua;
   }
