@@ -1,7 +1,6 @@
 body {
     font-family: cursor, monospace;
 }
-
 #terminal {
     position: fixed;
     overflow: auto;
