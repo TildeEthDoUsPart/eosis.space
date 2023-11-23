@@ -1,3 +1,5 @@
+VERSION = "0.6"
+
 error = [
     "Command not found. Type 'help' to get a list of all available commands."
 ]
@@ -36,7 +38,7 @@ motd = [
     `&nbsp(. .) &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp___ &nbsp____  &nbsp_____(_)____`,
     `&nbsp&nbsp=w= (\\ &nbsp&nbsp&nbsp  &nbsp/ _ \\/ __ \\/ ___/ / ___/`,
     `&nbsp/ ^ \\// &nbsp&nbsp&nbsp / &nbsp__/ /_/ (__  &nbsp) (__ &nbsp) `,
-    `(|| ||) &nbsp&nbsp&nbsp&nbsp \\___/\\____/____/_/____/  &nbsp v0.5`,
+    `(|| ||) &nbsp&nbsp&nbsp&nbsp \\___/\\____/____/_/____/  &nbsp v` + VERSION,
     `,""_""_ .  `,
     "Welcome to my terminal !",
     "Contact : hey@eosis.space",
@@ -102,16 +104,16 @@ moons = [
     "<span id='moons'>Autopilot currently disabled. You cannot use the word ROUTE.</span>",
     "<span id='moons'>Scanners unavailable, INFO word has been disabled.</span>",
     "<span id='moons'>----------------------</span>",
-    "<br>",
+    " ",
     "<span id='moons'>The Company building  //  Buying at 30%</span>",
-    "<br>",
+    " ",
     "<span id='moons'>* Experimentation</span>",
     "<span id='moons'>* Assurance (Rainy)</span>",
     "<span id='moons'>* Vow</span>",
-    "<br>",
+    " ",
     "<span id='moons'>* Offense (Flooded)</span>",
     "<span id='moons'>* March (Flooded)</span>",
-    "<br>",
+    " ",
     "<span id='moons'>* Rend (Eclipse)</span>",
     "<span id='moons'>* Dine (Eclipse)</span>",
     "<span id='moons'>* Titan (Foggy)</span>"
@@ -119,4 +121,32 @@ moons = [
 
 clear = [
     "&func clearConsole"
+]
+
+ehistory = [
+    "&func displayHistory"
+]
+
+date = [
+    "&func displayDate"
+]
+
+socials = [
+    "<span id='highlight'>GitHub</span> : See my latest projects and contributions",
+    " ",
+    "<span id='highlight'>Twitter</span> : Posting and rambling about random things",
+    " ",
+    "<span id='highlight'>Youtube</span> : Random (but well-made) videos and essays",
+    " ",
+    "<span id='highlight'>Steam</span> : See the games I play, and my activity",
+    " ",
+    "<span id='highlight'>Twitch</span> : I stopped streaming but one day I'll stream myself progamming",
+    " ",
+    "<span id='highlight'>Ko-fi</span> : If you ever have spare change......",
+]
+
+projects = [
+    "<span id='underline'>pokedex</span> - simple pokedex made with React",
+    " ",
+    "<span id='underline'>project</span> - project description"
 ]

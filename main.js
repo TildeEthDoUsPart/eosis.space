@@ -4,16 +4,16 @@ let commands = {
     "zerator" : zerator, //secret
     "motd" : motd,
     "neofetch" : NOT_IMPLEMENTED_YET, //secret
-    "projects" : NOT_IMPLEMENTED_YET,
+    "projects" : projects,
     "error" : error,
     "moons" : moons,
     "clear" : clear,
-    "date" : NOT_IMPLEMENTED_YET, // secret
+    "date" : date, // secret
     "help" : help,
     "repo" : repo,
-    "history" : NOT_IMPLEMENTED_YET,
+    "history" : ehistory,
     "whoami" : whoami, // secret
-    "socials" : NOT_IMPLEMENTED_YET,
+    "socials" : socials,
     "skills" : NOT_IMPLEMENTED_YET,
     "blog" : blog,
     "weather" : weather, //reserved for later use
@@ -33,7 +33,7 @@ commandBox.on("keydown",function(evt) {
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
             commandHistory.unshift(commandBox.val())
-            submitCommand(commandBox.val(),commandHistory[0])
+            submitCommand(commandBox.val(),commandHistory[0])   
         }
     } else if (evt.keyCode == 38){
         evt.preventDefault()
@@ -59,9 +59,18 @@ function submitCommand(command,value){
 }
 
 function clearConsole(){
-    console.warn("lol, lmao even")
     commandHistory = []
     commandDisplay.html("")
+}
+
+function displayHistory(){
+    commandHistory.map((item) => {
+        commandDisplay.append(item + "<br>")
+    })
+}
+
+function displayDate(){
+    commandDisplay.append(Date() + "<br>")
 }
 
 function print_command(command,value){
@@ -70,12 +79,12 @@ function print_command(command,value){
         if (line.split(' ')[0] == "&link"){
             sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
         } else if (line.split(' ')[0] == "&func"){
-            sleep(700).then(() => {window[line.split(' ')[1]]()})
+            window[line.split(' ')[1]]()
         } else {
             commandDisplay.append(line + "<br>")
         }
     })
-    commandDisplay.append("<br>")
+    if (command != "clear"){commandDisplay.append("<br>")}
     commandBox.focus()
     commandBox.get(0).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 }
