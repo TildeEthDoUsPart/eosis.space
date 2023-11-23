@@ -28,7 +28,8 @@ body {
 }
 
 #command {
-    color:#e0af68
+    color:#e0af68;
+    text-shadow: 0 0 10px #dfa00b; 
 }
 
 #accent {

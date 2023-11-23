@@ -26,7 +26,7 @@ about = [
     "Upon entering highschool, I chose to have <span id='accent'>CS classes</span>, where I learned cool things like", 
     "Python, SQL, HTML, CSS, JS, basic algorithms, data structures...",
     "These classes woke me up, and since then I am getting even more into programming,",
-    " coding bigger projects and being stronger.",
+    "coding bigger projects and being stronger.",
     "After that, I joined <span id='accent'>EPSI</span>, a private CS school, and things have been going very great.",
     "I'm ahead on most syllabuses, and my classmates are cool :D",
     " ",
@@ -57,7 +57,7 @@ motd = [
     "<span id='accent'>Welcome to my terminal !</span>",
     "Contact : hey@eosis.space",
     "---",
-    "Type '<span id='command'>help</span>' to get a list of all available commands.",
+    "<span id='r'>Type '<span id='command'>help</span>' to get a list of all available commands.</span>",
     " ",
 ]
 
@@ -164,17 +164,23 @@ projects = [
     " ",
     "<span id='underline'>project</span> - project description"
 ]
-
+function getSkillIcons(){
+    if (window.innerWidth <= 390){
+        return ["<img src='https://skillicons.dev/icons?i=js,html,css,py,discord,git,github,figma,linux,mysql,php&perline=5'/>","<img src='https://skillicons.dev/icons?i=docker,react,godot,vite&perline=5'/>","<img src='https://skillicons.dev/icons?i=electron,nodejs,ts,firebase,kotlin,rust,tailwind&perline=5'/>"]
+    } else {
+        return ["<img src='https://skillicons.dev/icons?i=js,html,css,py,discord,git,github,figma,linux,mysql,php'/>","<img src='https://skillicons.dev/icons?i=docker,react,godot,vite'/>","<img src='https://skillicons.dev/icons?i=electron,nodejs,ts,firebase,kotlin,rust,tailwind'/>"]
+    }
+}
 skills = [
     "Skills I have :",
     " ",
-    "<img src='https://skillicons.dev/icons?i=js,html,css,py,discord,git,github,figma,linux,mysql,php'/>",
+    getSkillIcons()[0],
     " ",
     "Skills I'm learning : ",
     " ",
-    "<img src='https://skillicons.dev/icons?i=docker,react,godot,vite'/>",
+    getSkillIcons()[1],
     " ",
     "Skills I wish I had : ",
     " ",
-    "<img src='https://skillicons.dev/icons?i=electron,nodejs,ts,firebase,kotlin,rust,tailwind'/>"
+    getSkillIcons()[2]
 ]

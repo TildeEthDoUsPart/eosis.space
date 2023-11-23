@@ -18,3 +18,18 @@ body {
     flex: 1;
     margin-left: 5px;
 }
+
+#commandDisplay {
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: block;
+}
+
+@media only screen and (max-width : 812px) {
+  #commandDisplay {
+    width: 50%;
+  }
+
+  
+}
