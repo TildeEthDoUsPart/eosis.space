@@ -1,4 +1,4 @@
-VERSION = "0.9"
+VERSION = "1.0"
 
 error = [
     "<span id='error'>Command not found. Type '<span id='command'>help</span>' to get a list of all available commands.</span>"
@@ -8,7 +8,7 @@ help = [
     "<span id='command'>about</span> : about eosis",
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>projects</span> : some of my programming projects",
-    "<span id='command'>clear</span> : clear the termminal",
+    "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the termminal",
     "<span id='command'>help</span> : get a list of all available commands",
     "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>history</span> : command history",
@@ -100,13 +100,13 @@ blog = [
 ]
 
 weather = [
-    "Opening weather app...",
-    "&link https://weather.eosis.space"
+    "very soon  ",
+    //"&link https://weather.eosis.space"
 ]
 
 tinyspace = [
-    "Opening tinyspace...",
-    "&link https://tinyspace.eosis.space"
+    "soon",
+    //"&link https://tinyspace.eosis.space"
 ]
 
 whoami = [
@@ -119,7 +119,7 @@ moons = [
     "<span id='moons'>Scanners unavailable, INFO word has been disabled.</span>",
     "<span id='moons'>----------------------</span>",
     " ",
-    "<span id='moons'>The Company building  //  Buying at 30%</span>",
+    "<span id='moons'>* The Company building  //  Buying at 30%</span>",
     " ",
     "<span id='moons'>* Experimentation</span>",
     "<span id='moons'>* Assurance (Rainy)</span>",
@@ -146,23 +146,23 @@ date = [
 ]
 
 socials = [
-    "<span id='highlight'>GitHub</span> &nbsp&nbsp:&nbsp See my latest projects and contributions",
+    "<span id='highlight'><a href='https://github.com/eosiswastaken' target='_blank'>GitHub</a></span> &nbsp&nbsp:&nbsp See my latest projects and contributions",
     " ",
-    "<span id='highlight'>Twitter</span> &nbsp:&nbsp Posting and rambling about random things",
+    "<span id='highlight'><a href='https://twitter.com/eosiswastaken' target='_blank'>Twitter</a></span> &nbsp:&nbsp Posting and rambling about random things",
     " ",
-    "<span id='highlight'>Youtube</span> &nbsp:&nbsp Random (but well-made) videos and essays",
+    "<span id='highlight'><a href='https://youtube.com/@eosiswastaken' target='_blank'>Youtube</a></span> &nbsp:&nbsp Random (but well-made) videos and essays",
     " ",
-    "<span id='highlight'>Steam</span> &nbsp&nbsp :&nbsp See the games I play, and my activity",
+    "<span id='highlight'><a href='https://steamcommunity.com/id/eosiswastaken' target='_blank'>Steam</a></span> &nbsp&nbsp :&nbsp See the games I play, and my activity",
     " ",
-    "<span id='highlight'>Twitch</span> &nbsp&nbsp:&nbsp I stopped streaming but one day I'll stream myself progamming",
+    "<span id='highlight'><a href='https://twitch.com/eosis_' target='_blank'>Twitch</a></span> &nbsp&nbsp:&nbsp I stopped streaming but one day I'll stream myself progamming",
     " ",
-    "<span id='highlight'>Ko-fi</span> &nbsp&nbsp :&nbsp If you ever have spare change......",
+    "<span id='highlight'><a href='https://ko-fi.com/eosiswastaken' target='_blank'>Ko-fi</a></span> &nbsp&nbsp :&nbsp If you ever have spare change......",
 ]
 
 projects = [
-    "<span id='underline'>pokedex</span> - simple pokedex made with React",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/pokedex' target='_blank'>pokedex</a></span> - simple pokedex made with React",
     " ",
-    "<span id='underline'>project</span> - project description"
+    "<span id='underline'><a href='https://github.com/eosiswastaken/project' target='_blank'>project</a></span> - project description"
 ]
 function getSkillIcons(){
     if (window.innerWidth <= 390){
@@ -183,4 +183,8 @@ skills = [
     "Skills I wish I had : ",
     " ",
     getSkillIcons()[2]
+]
+
+meow = [
+    "<span id='meow'>meow 🥺</span>"
 ]

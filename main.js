@@ -6,11 +6,13 @@ let commands = {
     "neofetch" : NOT_IMPLEMENTED_YET, //secret
     "projects" : projects,
     "error" : error,
-    "moons" : moons,
+    "moons" : moons, // secret
     "clear" : clear,
+    "cls" : clear,
     "date" : date, // secret
     "help" : help,
     "repo" : repo,
+    "meow" : meow, // secret
     "history" : ehistory,
     "whoami" : whoami, // secret
     "socials" : socials,
@@ -95,5 +97,5 @@ function sleep(ms) {
   }
 
 sleep(100).then(() => {print_command("motd","motd")})
-console.log("%cDid you know there are 6 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
-console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 3 are based off of eosis's personal interests (c../z....../m....).","font-size:10px;color:grey")
+console.log("%cDid you know there are 7 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
+console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 4 are based off of eosis's personal interests (c../z....../m..../m...).","font-size:10px;color:grey")
