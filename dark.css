@@ -1,0 +1,39 @@
+body {
+    background-color: #1e1423;
+    color:#737da0
+}
+
+::selection {
+    background-color: #41a6b5;
+    color:#1e1423
+}
+
+#meow {
+    color: #d162a4;
+}
+
+#moons {
+    color: #35e53a;
+}
+
+#highlight {
+    background-color: #32b95e;
+    color:#1e1423
+
+}
+
+#underline {
+    text-decoration: underline;
+
+}
+
+#command {
+    color:#e0af68
+}
+
+#accent {
+    color:#2bb9e6
+}
+#error {
+    color:#f77672
+}

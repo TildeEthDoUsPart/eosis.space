@@ -14,7 +14,7 @@ let commands = {
     "history" : ehistory,
     "whoami" : whoami, // secret
     "socials" : socials,
-    "skills" : NOT_IMPLEMENTED_YET,
+    "skills" : skills,
     "blog" : blog,
     "weather" : weather, //reserved for later use
     "tinyspace" : tinyspace, //reserved for later use
@@ -52,8 +52,10 @@ commandBox.on("keydown",function(evt) {
 function submitCommand(command,value){
     commandBox.val("")
     if (command in commands){
+        commandDisplay.append(commandPrefix + "<span id='command'>" + value + "</span><br><br>")
         print_command(command,value)
     } else {
+        commandDisplay.append(commandPrefix + "<span id='error'>" + value + "</span><br><br>")
         print_command("error",value)
     }
 }
@@ -74,7 +76,6 @@ function displayDate(){
 }
 
 function print_command(command,value){
-    commandDisplay.append(commandPrefix + value + "<br><br>")
     commands[command].map((line) => {
         if (line.split(' ')[0] == "&link"){
             sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
