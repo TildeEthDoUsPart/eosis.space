@@ -1,7 +1,7 @@
 let commands = {
     "about" : about,
     "cat" : cat, //secret
-    "zerator" : zerator, //secret
+    "zerator" : zerator, ///secret
     "motd" : motd,
     "neofetch" : NOT_IMPLEMENTED_YET, //secret
     "projects" : projects,
