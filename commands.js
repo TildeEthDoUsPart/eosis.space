@@ -96,3 +96,27 @@ tinyspace = [
 whoami = [
     "visitor"
 ]
+
+moons = [
+    "<span id='moons'>Welcome to the exomoons catalogue.</span>",
+    "<span id='moons'>Autopilot currently disabled. You cannot use the word ROUTE.</span>",
+    "<span id='moons'>Scanners unavailable, INFO word has been disabled.</span>",
+    "<span id='moons'>----------------------</span>",
+    "<br>",
+    "<span id='moons'>The Company building  //  Buying at 30%</span>",
+    "<br>",
+    "<span id='moons'>* Experimentation</span>",
+    "<span id='moons'>* Assurance (Rainy)</span>",
+    "<span id='moons'>* Vow</span>",
+    "<br>",
+    "<span id='moons'>* Offense (Flooded)</span>",
+    "<span id='moons'>* March (Flooded)</span>",
+    "<br>",
+    "<span id='moons'>* Rend (Eclipse)</span>",
+    "<span id='moons'>* Dine (Eclipse)</span>",
+    "<span id='moons'>* Titan (Foggy)</span>"
+]
+
+clear = [
+    "&func clearConsole"
+]

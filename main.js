@@ -6,7 +6,8 @@ let commands = {
     "neofetch" : NOT_IMPLEMENTED_YET, //secret
     "projects" : NOT_IMPLEMENTED_YET,
     "error" : error,
-    "clear" : NOT_IMPLEMENTED_YET,
+    "moons" : moons,
+    "clear" : clear,
     "date" : NOT_IMPLEMENTED_YET, // secret
     "help" : help,
     "repo" : repo,
@@ -32,7 +33,7 @@ commandBox.on("keydown",function(evt) {
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
             commandHistory.unshift(commandBox.val())
-            submitCommand(commandBox.val(),commandHistory[commandHistory.length-1])
+            submitCommand(commandBox.val(),commandHistory[0])
         }
     } else if (evt.keyCode == 38){
         evt.preventDefault()
@@ -57,13 +58,22 @@ function submitCommand(command,value){
     }
 }
 
+function clearConsole(){
+    console.warn("lol, lmao even")
+    commandHistory = []
+    commandDisplay.html("")
+}
+
 function print_command(command,value){
     commandDisplay.append(commandPrefix + value + "<br><br>")
     commands[command].map((line) => {
         if (line.split(' ')[0] == "&link"){
             sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
+        } else if (line.split(' ')[0] == "&func"){
+            sleep(700).then(() => {window[line.split(' ')[1]]()})
+        } else {
+            commandDisplay.append(line + "<br>")
         }
-        commandDisplay.append(line + "<br>")
     })
     commandDisplay.append("<br>")
     commandBox.focus()
@@ -75,5 +85,5 @@ function sleep(ms) {
   }
 
 sleep(100).then(() => {print_command("motd","motd")})
-console.log("%cDid you know there are 5 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
-console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 2 are based off of eosis's personal interests (c../z......).","font-size:10px;color:grey")
+console.log("%cDid you know there are 6 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
+console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 3 are based off of eosis's personal interests (c../z....../m....).","font-size:10px;color:grey")
