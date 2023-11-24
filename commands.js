@@ -148,8 +148,6 @@ date = [
 socials = [
     "<span id='highlight'><a href='https://github.com/eosiswastaken' target='_blank'>GitHub</a></span> &nbsp&nbsp:&nbsp See my latest projects and contributions",
     " ",
-    "<span id='highlight'><a href='https://twitter.com/eosiswastaken' target='_blank'>Twitter</a></span> &nbsp:&nbsp Posting and rambling about random things",
-    " ",
     "<span id='highlight'><a href='https://youtube.com/@eosiswastaken' target='_blank'>Youtube</a></span> &nbsp:&nbsp Random (but well-made) videos and essays",
     " ",
     "<span id='highlight'><a href='https://steamcommunity.com/id/eosiswastaken' target='_blank'>Steam</a></span> &nbsp&nbsp :&nbsp See the games I play, and my activity",
