@@ -16,6 +16,11 @@ body {
     color: #35e53a;
 }
 
+#commandLine input[type="text"] {
+    color: #efe6d5;
+}
+
+
 #highlight {
     background-color: #32b95e;
     color:#1e1423

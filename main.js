@@ -31,19 +31,22 @@ let commandHistory = []
 let historyIndex = -1
 
 
+const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+
 commandBox.on("keydown",function(evt) {
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
+            historyIndex = -1
             commandHistory.unshift(commandBox.val())
             submitCommand(commandBox.val(),commandHistory[0])   
         }
     } else if (evt.keyCode == 38){
+        historyIndex = clamp(historyIndex+1,-1,commandHistory.length)
         evt.preventDefault()
-        historyIndex += 1
         commandBox.val(commandHistory[historyIndex])
     } else if (evt.keyCode == 40){
+        historyIndex = clamp(historyIndex-1,-1,commandHistory.length)
         evt.preventDefault()
-        historyIndex -= 1
         commandBox.val(commandHistory[historyIndex])
     } else {
         historyIndex = -1
