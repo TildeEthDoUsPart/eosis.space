@@ -158,9 +158,19 @@ socials = [
 ]
 
 projects = [
-    "<span id='underline'><a href='https://github.com/eosiswastaken/pokedex' target='_blank'>pokedex</a></span> - simple pokedex made with React",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/pokedex' target='_blank'>pokedex</a></span> - simple pokedex made with React, TS & Tailwind",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/project' target='_blank'>project</a></span> - project description"
+    "<span id='underline'><a href='https://github.com/eosiswastaken/wyn' target='_blank'>wyn</a></span> - my first discord bot made with discord.py & sqlite",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/eosis.space' target='_blank'>eosis.space</a></span> - this site",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/me.eosis.space' target='_blank'>me.eosis.space</a></span> - quick business card using React",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/goumeurs-de-mobs-III' target='_blank'>wyn</a></span> - python turn-per-turn PvE battle game",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/bufferNote' target='_blank'>bufferNote</a></span> - really simple note-taking bookmark URI tool",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/instameme' target='_blank'>instameme</a></span> - simple social network website in PHP with working auth, posting, likes and commenting"
 ]
 function getSkillIcons(){
     if (window.innerWidth <= 618){
