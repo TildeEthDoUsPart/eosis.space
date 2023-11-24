@@ -102,5 +102,5 @@ function sleep(ms) {
   }
 
 sleep(100).then(() => {print_command("motd","motd")})
-console.log("%cDid you know there are 7 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
-console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 4 are based off of eosis's personal interests (c../z....../m..../m...).","font-size:10px;color:grey")
+console.log("%cDid you know there are 9 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
+console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 6 are based off of eosis's personal interests (c../z....../m..../m.../g........./m....).","font-size:10px;color:grey")
