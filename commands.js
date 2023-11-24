@@ -32,7 +32,7 @@ about = [
     " ",
     "I also play <span id='accent'>video games</span> sometimes, even though I'm trying to free more time to code",
     "and work on my projects. Some of my favorite games are :",
-    "Minecraft, No Man's Sky, ALbion Online, Hypixel Skyblock, Noita, Risk of Rain II,",
+    "Minecraft, No Man's Sky, Albion Online, Hypixel Skyblock, Noita, Risk of Rain II,",
     "Lethal Company, Terraria, Satisfactory, Beat Saber, Starbound, Celeste, Astroneer...",
     " ",
     "I am also a huge fan of <span id='accent'>workspace aesthethics</span>, and setups in general.",
@@ -163,7 +163,7 @@ projects = [
     "<span id='underline'><a href='https://github.com/eosiswastaken/project' target='_blank'>project</a></span> - project description"
 ]
 function getSkillIcons(){
-    if (window.innerWidth <= 390){
+    if (window.innerWidth <= 618){
         return ["<img src='https://skillicons.dev/icons?i=js,html,css,py,discord,git,github,figma,linux,mysql,php&perline=5'/>","<img src='https://skillicons.dev/icons?i=docker,react,godot,vite&perline=5'/>","<img src='https://skillicons.dev/icons?i=electron,nodejs,ts,firebase,kotlin,rust,tailwind&perline=5'/>"]
     } else {
         return ["<img src='https://skillicons.dev/icons?i=js,html,css,py,discord,git,github,figma,linux,mysql,php'/>","<img src='https://skillicons.dev/icons?i=docker,react,godot,vite'/>","<img src='https://skillicons.dev/icons?i=electron,nodejs,ts,firebase,kotlin,rust,tailwind'/>"]
@@ -185,4 +185,36 @@ skills = [
 
 meow = [
     "<span id='meow'>meow 🥺</span>"
+]
+
+manul = [
+    "Manul !!!",
+    "&link https://www.instagram.com/p/Cuu5LRYAVE6/"
+]
+
+girlkisser = [
+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@@@@@@@(...%@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@% #@@@/.&@@@@@@@@@@",
+".&@@@@@@@@@@.(@@@@@@@@@@@@@@@@@&@.&nbsp %@@@.&@@@@@@@&",
+"@#.&@@@@@@*/&@@@@,...(@@@@@@@@@&&nbsp &nbsp &nbsp @@@#*@@@@@@&",
+"@@@@@*@@@/(@@@@@.&nbsp...@@@@@@@@@@.&nbsp&nbsp &nbsp &nbsp*@@@ @@@@@@@",
+",/#&@.@@&*@@@@@@/&nbsp &nbsp .@@@@@@@@@@.&nbsp &nbsp &nbsp@@@@ @@@@@@@",
+"@@@@@.@@&*@@@@@@@%..(@@@@@@@@@@@@@@@@@@@%*##@@@@@.",
+",@@@##@@@&/&@@@@@@#%@@@@@@@@@@@@@@@&#%%(@@@@@@@@@@",
+"&.@@&.@@*%#/&@@@@@@@@@@@@@@@@@@@@@@@@@@@&@@@@@@@@@",
+",%@@@@%.(@@@%&@@@@@@@@@@@@@@@@@@@@@@@@@@@@#.,@@@@@",
+"@@@@@@@@@&, (#@@@@@@@@@&%@@@@@@@@@@@@@@,(&@@@@@@@@",
+"@@@@@@@@@@@@@@@@/.*@@@@@@@@@@@@@@@@@@@@@.#@@@@@@@@",
+"@@@@@@@@@@@@(..*@@@@@@@@@@@@@@@@@@@@@@@@@##@@@@@@@",
+"@@@@@@@@@@@@@@@@@.&@@@@@@@@@@@@@@@@@@@@@@@.(@@@@@@",
+"@@@@@@@@@@@@@@@@ @@@&/#@@@@@@@@@@@@/&@@@@@@/(@@@@@",
+"@@@@@@@@@@@@@@@@@@@@&.@@@@@@@@@@@@@@*@@@@@@@#,@@@@",
+"@@@@@@@@@@@@@@@@@@@@.@@@@@@@@@@@@@@@.@@@@@@@@&,@@@",
+"@@@@@@@@@@@@@@@@@@@*#@@@@@@@@@@@@@@@.@@@@@@@@@//@@",
+"@@@@@@@@@@@@@@@@@@&*@@@@@@@@@@@@@@@@,&@@@@@@@@& @@",
+"@@@@@@@@@@@@@@@@@@ @@@@@@@@@@@@@@@@@*&@@@@@@@@@,&@",
+"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
 ]

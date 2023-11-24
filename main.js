@@ -11,6 +11,7 @@ let commands = {
     "cls" : clear,
     "date" : date, //secret
     "help" : help,
+    "manul" : manul, //secret
     "repo" : repo,
     "meow" : meow, //secret
     "history" : ehistory,
@@ -18,6 +19,7 @@ let commands = {
     "socials" : socials,
     "skills" : skills,
     "blog" : blog,
+    "girlkisser" : girlkisser, // secret
     "weather" : weather, //reserved for later use
     "tinyspace" : tinyspace, //reserved for later use
 }
@@ -36,7 +38,7 @@ const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 commandBox.on("keydown",function(evt) {
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
-            historyIndex = -1
+            historyIndex = -1   
             commandHistory.unshift(commandBox.val())
             submitCommand(commandBox.val(),commandHistory[0])   
         }
