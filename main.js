@@ -1,20 +1,20 @@
 let commands = {
     "about" : about,
     "cat" : cat, //secret
-    "zerator" : zerator, //secret
+    "zerator" : zerator, ///secret
     "motd" : motd,
     "neofetch" : NOT_IMPLEMENTED_YET, //secret
     "projects" : projects,
     "error" : error,
-    "moons" : moons, // secret
+    "moons" : moons, //secret
     "clear" : clear,
     "cls" : clear,
-    "date" : date, // secret
+    "date" : date, //secret
     "help" : help,
     "repo" : repo,
-    "meow" : meow, // secret
+    "meow" : meow, //secret
     "history" : ehistory,
-    "whoami" : whoami, // secret
+    "whoami" : whoami, //secret
     "socials" : socials,
     "skills" : skills,
     "blog" : blog,
