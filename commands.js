@@ -105,8 +105,8 @@ weather = [
 ]
 
 tinyspace = [
-    "soon",
-    //"&link https://tinyspace.eosis.space"
+    "Opening tinyspace.eosis.space...",
+    "&link https://tinyspace.eosis.space"
 ]
 
 whoami = [
