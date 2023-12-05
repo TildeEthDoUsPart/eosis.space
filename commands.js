@@ -1,4 +1,4 @@
-VERSION = "1.0"
+VERSION = "1.1"
 
 error = [
     "<span id='error'>Command not found. Type '<span id='command'>help</span>' to get a list of all available commands.</span>"
@@ -8,7 +8,7 @@ help = [
     "<span id='command'>about</span> : about eosis",
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>projects</span> : some of my programming projects",
-    "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the termminal",
+    "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
     "<span id='command'>help</span> : get a list of all available commands",
     "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>history</span> : command history",
@@ -34,6 +34,10 @@ about = [
     "and work on my projects. Some of my favorite games are :",
     "Minecraft, No Man's Sky, Albion Online, Hypixel Skyblock, Noita, Risk of Rain II,",
     "Lethal Company, Terraria, Satisfactory, Beat Saber, Starbound, Celeste, Astroneer...",
+    " ",
+    "I also love trains, subways, planes and everything <span id='accent'>public transport</span> ! One of my dream jobs is to",
+    "work as a <span id='accent'>sound engineer</span> or technician in a festival / venue, as I love the world of events, and all",
+    "the technical origanization that comes behind it, from unpacking everything, setting up stages and software...",
     " ",
     "I am also a huge fan of <span id='accent'>workspace aesthethics</span>, and setups in general.",
     "I love clutter-minimal desks setups, and even made myself one over the years !",
@@ -95,13 +99,16 @@ repo = [
 ]
 
 blog = [
-    "Opening blog...",
-    "&link https://gist.io/@eosiswastaken/6a739ea48f855ee10f14b3128645ac3b"
+    "Blog posts :",
+    " ",
+    "<span id='underline'><a href='https://gist.io/@eosiswastaken/6a739ea48f855ee10f14b3128645ac3b' target='_blank'>making eosis.space</a></span>",
+    " ",
+    "<span id='underline'><a href='https://gist.io/@eosiswastaken/6a739ea48f855ee10f14b3128645ac3b' target='_blank'>empty blog post</a></span>"
 ]
 
 weather = [
-    "very soon  ",
-    //"&link https://weather.eosis.space"
+    "Opening weather.eosis.space (in progress)...",
+    "&link https://weather.eosis.space"
 ]
 
 tinyspace = [
