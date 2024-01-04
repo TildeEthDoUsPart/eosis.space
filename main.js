@@ -1,5 +1,6 @@
 let commands = {
     "about" : about,
+    "setup" : setup,
     "cat" : cat, //secret
     "zerator" : zerator, ///secret
     "motd" : motd,

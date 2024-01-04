@@ -1,4 +1,4 @@
-VERSION = "1.1"
+VERSION = "1.2"
 
 error = [
     "<span id='error'>Command not found. Type '<span id='command'>help</span>' to get a list of all available commands.</span>"
@@ -6,6 +6,7 @@ error = [
 
 help = [
     "<span id='command'>about</span> : about eosis",
+    "<span id='command'>setup</span> : my setup and uses",
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>projects</span> : some of my programming projects",
     "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
@@ -37,13 +38,38 @@ about = [
     " ",
     "I also love trains, subways, planes and everything <span id='accent'>public transport</span> ! One of my dream jobs is to",
     "work as a <span id='accent'>sound engineer</span> or technician in a festival / venue, as I love the world of events, and all",
-    "the technical origanization that comes behind it, from unpacking everything, setting up stages and software...",
+    "the technical origanization that comes behind it, from unpacking everything, setting up stages, cables and software...",
     " ",
     "I am also a huge fan of <span id='accent'>workspace aesthethics</span>, and setups in general.",
     "I love clutter-minimal desks setups, and even made myself one over the years !",
-    "<span id='underline'>Click here</span> if you'd like to see it."
+    "Use the <span id='command'>setup</span> command if you'd like to see it."
 ]
 
+setup = [
+    "Over the years, I have gathered a lot of tools and equipment to make my setup. I am not so far from reaching my",
+    "'<span id='accent'>dream setup</span>', as after being a clutter-core fan, then a minimalist enjoyer, I think I am done with it and have everyting I need.",
+    " ",
+    "want some <span id='accent'>photos</span> ? (soon)",
+    " ",
+    "<span id='underline'>workstation</span>&nbsp&nbsp: &nbsp&nbsplenovo ideapad3 (i3 / 8Gb)",
+    "<span id='underline'>terminal</span>&nbsp&nbsp: &nbsp&nbspwindows terminal + starship <a href='https://github.com/eosiswastaken/dotfiles/tree/main' target='_blank'>(dotfile)</a>",
+    "<span id='underline'>browser</span>&nbsp&nbsp: &nbsp&nbspfirefox",
+    "<span id='underline'>editor</span>&nbsp&nbsp: &nbsp&nbspVSCode <a href='https://github.com/eosiswastaken/dotfiles/tree/main' target='_blank'>(dotfile)</a>",
+    "<span id='underline'>notes</span>&nbsp&nbsp: &nbsp&nbspnotion + todoist + habitkit",
+    "<span id='underline'>launcher</span>&nbsp&nbsp: &nbsp&nbspflow",
+    " ",
+    "<span id='underline'>keyboard</span>&nbsp&nbsp: &nbsp&nbspnuphy air60 + logitech g305",
+    "<span id='underline'>phone</span>&nbsp&nbsp: &nbsp&nbspnuphy redmi note 8 pro w/ niagara + mi watch active s1",
+    " ",
+    "<span id='underline'>gamestation</span>&nbsp&nbsp: &nbsp&nbspMag A520M Vector + 16Gb + RX 6700 XT + Ryzen Pro 4650G + 2To HDD + 256Go SSD",
+    "<span id='underline'>monitors</span>&nbsp&nbsp: &nbsp&nbspAsus VG27AQ + AOC Q27G2E",
+    " ",
+    "<span id='underline'>audio</span>&nbsp&nbsp: &nbsp&nbspFifine T669B + Stream Deck MK2 + (HyperX Alpha || Klim Fusion) + Akai LPD8 + Akai LPK25",
+    "<span id='underline'>gear</span>&nbsp&nbsp: &nbsp&nbspSwitch pro controller + Raspberry Pi 3B+ + Divoom Ditoo + cool plant + woven deskmat",
+    "<span id='underline'>lights</span>&nbsp&nbsp: &nbsp&nbsp2 Ikea ringlights + Govee LEDs",
+    " ",
+    "<span id='underline'>travel</span>&nbsp&nbsp: &nbsp&nbspNative Union stove -> Sony WF-C500 + 30W charger + USB-C and USB-A cables + pens + notebooks + switch usb adapter + microfiber cloth + 256Gb backup drive + 128Gb Medicat drive + keyboard cleaning kit"
+]
 
 cat = [
     `&nbsp/\\_/\\ `,
