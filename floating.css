@@ -1,0 +1,7 @@
+#floating {
+    background-color: aqua;
+    z-index: 999;
+    visibility: visible;
+    display: block;
+    position: fixed;
+}
