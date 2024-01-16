@@ -23,7 +23,6 @@ let commands = {
     "skills" : skills,
     "blog" : blog,
     "girlkisser" : girlkisser, // secret
-    "tinyspace" : tinyspace, //reserved for later use
 }
 
 
