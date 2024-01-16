@@ -4,7 +4,7 @@ let commands = {
     "cat" : cat, //secret
     "zerator" : zerator, ///secret
     "motd" : motd,
-    "neofetch" : NOT_IMPLEMENTED_YET, //secret
+    "neofetch" : neofetch, //secret
     "projects" : projects,
     "error" : error,
     "moons" : moons, //secret
@@ -23,6 +23,7 @@ let commands = {
     "skills" : skills,
     "blog" : blog,
     "girlkisser" : girlkisser, // secret
+    "neofetch": neofetch // secret
 }
 
 
@@ -33,6 +34,7 @@ let commandPrefix = '<label id="commandPrefix">visitor@eosis.space:~$ </label>'
 let commandHistory = []
 let historyIndex = -1
 
+console.log(navigator)
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
 
@@ -83,23 +85,62 @@ function displayHistory(){
     })
 }
 
+
+
+
+function updateUptime(){
+    console.log(start)
+    console.log(Date.now())
+    console.log(Date.now() - start)
+    uptime = Date.now() - start
+    msToTime(uptime)
+}
+
+function msToTime(ms) {
+    const seconds = Math.floor(ms / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+
+    const remainderHours = hours % 24;
+    const remainderMinutes = minutes % 60;
+
+    const dayText = days > 0 ? `${days} day${days > 1 ? 's' : ''}` : '';
+    const hourText = remainderHours > 0 ? `${remainderHours} hour${remainderHours > 1 ? 's' : ''}` : '';
+    const minutesText = remainderMinutes > 0 ? `${remainderMinutes} minute${remainderMinutes > 1 ? 's' : ''}` : '';
+
+    const result = [dayText, hourText, minutesText].filter(Boolean).join(', ');
+
+    neofetch[5] = `<pre>     <span id="nfred">it::::tt333EEF</span> <span id="nfgreen">@EEEEEEttttt33F</span>    Uptime: ${result.length > 0 ? result : 'less than a minute'}</pre>`
+}
+
 function displayDate(){
     commandDisplay.append(Date() + "<br>")
 }
 
 function print_command(command,value){
+    if (command === "neofetch"){
+        console.log("ceratio")
+        updateUptime()
+    }
     commands[command].map((line) => {
+    let preMode = false
+    if (line.substring(0,5) == "<pre>"){
+        preMode = true
+    }
         if (line.split(' ')[0] == "&link"){
             sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
         } else if (line.split(' ')[0] == "&func"){
             window[line.split(' ')[1]]()
         } else {
-            commandDisplay.append(line + "<br>")
+            console.log(preMode)
+            if (preMode){commandDisplay.append(line)} else {commandDisplay.append(line + "<br>")}
         }
     })
     if (command != "clear"){commandDisplay.append("<br>")}
     commandBox.focus()
     commandBox.get(0).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    preMode = false
 }
 
 function sleep(ms) {
