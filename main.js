@@ -10,6 +10,8 @@ let commands = {
     "moons" : moons, //secret
     "clear" : clear,
     "cls" : clear,
+    "reload" : reload,
+    "r" : reload,
     "date" : date, //secret
     "help" : help,
     "manul" : manul, //secret
@@ -21,7 +23,6 @@ let commands = {
     "skills" : skills,
     "blog" : blog,
     "girlkisser" : girlkisser, // secret
-    "weather" : weather, //reserved for later use
     "tinyspace" : tinyspace, //reserved for later use
 }
 
@@ -71,6 +72,10 @@ function submitCommand(command,value){
 function clearConsole(){
     commandHistory = []
     commandDisplay.html("")
+}
+
+function reloadPage(){
+    window.location.reload()
 }
 
 function displayHistory(){

@@ -10,7 +10,7 @@ help = [
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>projects</span> : some of my programming projects",
     "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
-    "<span id='command'>reload</span> : reload the terminal",
+    "<span id='command'>reload</span>/<span id='command'>r</span> : reload the terminal",
     "<span id='command'>help</span> : get a list of all available commands",
     "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>history</span> : command history",
