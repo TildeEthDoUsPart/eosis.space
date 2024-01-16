@@ -5,19 +5,18 @@ error = [
 ]
 
 help = [
-    "<span id='command'>about</span> : about eosis",
+    "<span id='command'>about</span> : about me",
     "<span id='command'>setup</span> : my setup and uses",
-    "<span id='command'>motd</span> : display the motd header",
+    "<span id='command'>blog</span> : my personal blog",
     "<span id='command'>projects</span> : some of my programming projects",
+    "<span id='command'>skills</span> : check out the skills I have",
+    "<span id='command'>socials</span> : my social networks",
+    "<span id='command'>repo</span> : view github repo for this site",
+    "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
     "<span id='command'>reload</span>/<span id='command'>r</span> : reload the terminal",
-    "<span id='command'>help</span> : get a list of all available commands",
-    "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>history</span> : command history",
-    "<span id='command'>socials</span> : my social networks",
-    "<span id='command'>skills</span> : check out the skills I have",
-    "<span id='command'>blog</span> : my personal blog",
-    "<span id='command'>tinyspace</span> : a journey into space"
+    "<span id='command'>help</span> : get a list of all available commands"
 ]
 
 about = [
@@ -34,11 +33,12 @@ about = [
     "I also play <span id='accent'>video games</span> sometimes, even though I'm trying to free more time to code",
     "and work on my projects. Some of my favorite games are :",
     "Minecraft, No Man's Sky, Albion Online, Hypixel Skyblock, Noita, Risk of Rain II,",
-    "Lethal Company, Terraria, Satisfactory, Beat Saber, Starbound, Celeste, Astroneer...",
+    "Lethal Company, Terraria, Satisfactory, Beat Saber, Starbound, Cyberpunk 2077, Celeste, Astroneer...",
     " ",
     "I also love trains, subways, planes and everything <span id='accent'>public transport</span> ! One of my dream jobs is to",
     "work as a <span id='accent'>sound engineer</span> or technician in a festival / venue, as I love the world of events, and all",
-    "the technical origanization that comes behind it, from unpacking everything, setting up stages, cables and software...",
+    "the technical origanization that comes behind it, from unpacking everything, setting up stages, cables and software,",
+    "and managing a show or event in realtime.",
     " ",
     "I am also a huge fan of <span id='accent'>workspace aesthethics</span>, and setups in general.",
     "I love clutter-minimal desks setups, and even made myself one over the years !",
