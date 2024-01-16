@@ -10,13 +10,13 @@ help = [
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>projects</span> : some of my programming projects",
     "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
+    "<span id='command'>reload</span> : reload the terminal",
     "<span id='command'>help</span> : get a list of all available commands",
     "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>history</span> : command history",
     "<span id='command'>socials</span> : my social networks",
     "<span id='command'>skills</span> : check out the skills I have",
     "<span id='command'>blog</span> : my personal blog",
-    "<span id='command'>weather</span> : simple online weather app",
     "<span id='command'>tinyspace</span> : a journey into space"
 ]
 
@@ -59,7 +59,7 @@ setup = [
     "<span id='underline'>launcher</span>&nbsp&nbsp: &nbsp&nbspflow",
     " ",
     "<span id='underline'>keyboard</span>&nbsp&nbsp: &nbsp&nbspnuphy air60 + logitech g305",
-    "<span id='underline'>phone</span>&nbsp&nbsp: &nbsp&nbspnuphy redmi note 8 pro w/ niagara + mi watch active s1",
+    "<span id='underline'>phone</span>&nbsp&nbsp: &nbsp&nbspnuphy redmi note 8 pro w/ niagara",
     " ",
     "<span id='underline'>gamestation</span>&nbsp&nbsp: &nbsp&nbspMag A520M Vector + 16Gb + RX 6700 XT + Ryzen Pro 4650G + 2To HDD + 256Go SSD",
     "<span id='underline'>monitors</span>&nbsp&nbsp: &nbsp&nbspAsus VG27AQ + AOC Q27G2E",
@@ -191,19 +191,27 @@ socials = [
 ]
 
 projects = [
-    "<span id='underline'><a href='https://github.com/eosiswastaken/pokedex' target='_blank'>pokedex</a></span> - simple pokedex made with React, TS & Tailwind",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/pokedex' target='_blank'>pokedex</a></span> - simple pokedex made with React & Tailwind",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/blog' target='_blank'>blog</a></span> - minimal astro blog with searching, themes and RSS feed",
     " ",
     "<span id='underline'><a href='https://github.com/eosiswastaken/wyn' target='_blank'>wyn</a></span> - my first discord bot made with discord.py & sqlite",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/eosis.space' target='_blank'>eosis.space</a></span> - this site",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/eosis.space' target='_blank'>eosis.space</a></span> - this site, terminal portfolio",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/me.eosis.space' target='_blank'>me.eosis.space</a></span> - quick business card using React",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/weather' target='_blank'>weather</a></span> - weather app w/ AlpineJS and HTMX",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/goumeurs-de-mobs-III' target='_blank'>wyn</a></span> - python turn-per-turn PvE battle game",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/chillzone' target='_blank'>chillzone</a></span> - lofi and productivity PWA : listen to lofi, use pomodoro timers, takes notes...",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/bufferNote' target='_blank'>bufferNote</a></span> - really simple note-taking bookmark URI tool",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/me.eosis.space' target='_blank'>me</a></span> - simple business card component using React",
     " ",
-    "<span id='underline'><a href='https://github.com/eosiswastaken/instameme' target='_blank'>instameme</a></span> - simple social network website in PHP with working auth, posting, likes and commenting"
+    "<span id='underline'><a href='https://github.com/eosiswastaken/goumeurs-de-mobs-III' target='_blank'>gdm3</a></span> - python turn-per-turn PvE battle game",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/tinyspace' target='_blank'>tinyspace</a></span> - React persistent browser game about space, exploration, management and survival",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/bufferNote' target='_blank'>bufferNote</a></span> - minimal note-taking bookmark URI tool",
+    " ",
+    "<span id='underline'><a href='https://github.com/eosiswastaken/instameme' target='_blank'>instameme</a></span> - social network website in PHP with working auth, posting, likes and commenting"
 ]
 function getSkillIcons(){
     if (window.innerWidth <= 618){
@@ -233,6 +241,10 @@ meow = [
 manul = [
     "Manul !!!",
     "&link https://www.instagram.com/p/Cuu5LRYAVE6/"
+]
+
+reload = [
+    "&func reloadPage"
 ]
 
 girlkisser = [
