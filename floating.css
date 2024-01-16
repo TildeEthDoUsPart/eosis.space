@@ -1,7 +1,57 @@
+#iconbar {
+    border-radius: 7px;/* From https://css.glass */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    opacity: 0.7;
+    padding: 10px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+
+.notch {
+    width: 15px;
+    height: 15px;
+    padding: 0px 1px;
+    transition: all 0.2s;
+}
+
+.notch:hover {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s;
+}
+
+#tooltip {
+    padding-bottom: 8px;
+
+}
+
 #floating {
-    background-color: aqua;
-    z-index: 999;
-    visibility: visible;
-    display: block;
     position: fixed;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media only screen and (max-width : 440px) {
+    .notch {
+        padding: 0px;
+    }
+      
+}
+
+@media only screen and (max-width : 410px) {
+    .notch {
+        margin-left: -1px;
+    }
+    
 }
