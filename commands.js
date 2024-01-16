@@ -1,4 +1,4 @@
-VERSION = "1.3"
+VERSION = "1.4"
 
 error = [
     "<span id='error'>Command not found. Type '<span id='command'>help</span>' to get a list of all available commands.</span>"
