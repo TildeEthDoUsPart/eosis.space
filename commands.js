@@ -183,6 +183,8 @@ socials = [
     " ",
     "<span id='highlight'><a href='https://youtube.com/@eosiswastaken' target='_blank'>Youtube</a></span> &nbsp:&nbsp Random (but well-made) videos and essays",
     " ",
+    "<span id='highlight'><a href='https://twitter.com/eosiswastaken' target='_blank'>Twitter</a></span> &nbsp&nbsp :&nbsp Not really active anymore on this account, but feel free to check out",
+    " ",    
     "<span id='highlight'><a href='https://steamcommunity.com/id/eosiswastaken' target='_blank'>Steam</a></span> &nbsp&nbsp :&nbsp See the games I play, and my activity",
     " ",
     "<span id='highlight'><a href='https://twitch.com/eosis_' target='_blank'>Twitch</a></span> &nbsp&nbsp:&nbsp I stopped streaming but one day I'll stream myself progamming",
