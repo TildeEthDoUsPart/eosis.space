@@ -30,7 +30,7 @@ my personnal webpage and portfolio made with Javascript and jQuery. I've always 
 - fully responsive
 - animated menu bar to navigate between projects
 - clean code
-- lighthouse optimized (xx/100)
+- lighthouse optimized (xx/100) (soon)
 - meta tags
 - secret commands
 - themes (soon)
