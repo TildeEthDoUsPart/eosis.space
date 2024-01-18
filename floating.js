@@ -7,9 +7,6 @@ let links = $('a.appbar')
 let animationPlaying = false
 let mobileClicked = ""
 
-for (i=0;i<notches.length;i++){
-    notches[i].addEventListener("mouseover",changeTooltip)
-}
 
 function changeTooltip(evt){ // Changing tooltip text on icon hover
     let text = evt.target.getAttribute('data-tooltip')
@@ -41,6 +38,10 @@ if (isMobile()){ // On mobile, the link has to be tapped two times to trigger re
     }
 
 
+} else {   
+for (i=0;i<notches.length;i++){
+    notches[i].addEventListener("mouseover",changeTooltip)
+}
 }
 
 window.addEventListener('mousemove',(evt) => {
