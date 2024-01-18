@@ -39,7 +39,7 @@ my personnal webpage and portfolio made with Javascript and jQuery. I've always 
 
 ---
 
-👉 Quick start
+👉 Quickstart
 
 clone the repository
 
