@@ -13,6 +13,7 @@ for (i=0;i<notches.length;i++){
 
 function changeTooltip(evt){ // Changing tooltip text on icon hover
     let text = evt.target.getAttribute('data-tooltip')
+    alert('changed from changeTooltip called from eventListener')
     tooltip.text(text)
 }
 
