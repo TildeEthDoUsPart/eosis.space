@@ -24,16 +24,40 @@ my personnal webpage and portfolio made with Javascript and jQuery. I've always 
 
 ---
 
-👉 Features :
+👉 Features
 - multiple commands
 - keyboard shortcuts
 - fully responsive
+- themes
 - animated menu bar to navigate between projects
 - clean code
 - lighthouse optimized (xx/100) (soon)
 - meta tags
 - secret commands
-- themes (soon)
+
+<br>
+
+---
+
+
+👉 Adding themes
+
+Each theme is contained in 6 self-explanatory CSS variables, defined in the `themes.css` file. The variables are wrapped inside a `data-theme` selector, where the value of the selector is the name of your theme. This is used to switch themes and apply the rules when switching.
+
+
+```css
+[data-theme='ayu'] {
+    --background: #0d1017;
+    --text: #a58d89;
+    --accent: #a2d14a;
+    --error: #e21c51;
+    --command: #e6b450;
+    --highlight: #d8dcb4;
+}
+```
+
+To add a theme, simply modify the `themes.css` file, and submit a PR.
+
 
 <br>
 
