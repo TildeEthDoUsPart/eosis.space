@@ -23,7 +23,6 @@ let commands = {
     "r" : reload,
     "date" : date, //secret
     "help" : help,
-    "manul" : manul, //secret
     "repo" : repo,
     "meow" : meow, //secret
     "history" : ehistory,
@@ -31,7 +30,6 @@ let commands = {
     "socials" : socials,
     "skills" : skills,
     "blog" : blog,
-    "girlkisser" : girlkisser, // secret
     "neofetch": neofetch // secret
 }
 
@@ -155,7 +153,7 @@ function print_command(command,value){
         preMode = true
     }
     if (line.split(' ')[0] == "&link"){ // If function contains &link, wait then open link
-        sleep(700).then(() => {window.open(line.split(' ')[1],"_blank")})
+        sleep(450).then(() => {window.open(line.split(' ')[1],"_blank")})
     } else if (line.split(' ')[0] == "&func"){ // If function contains &func, wait then call function
         window[line.split(' ')[1]]() // Getting function name from the command content string
     } else {
@@ -186,5 +184,5 @@ function sleep(ms) {
   }
 
 sleep(100).then(() => {print_command("motd","motd")})
-console.log("%cDid you know there are 9 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
-console.log("%cHint : 3 of them are based on famous linux utility commands (d.../n......./w.....), and the other 6 are based off of eosis's personal interests (c../z....../m..../m.../g........./m....).","font-size:10px;color:grey")
+console.log("%cDid you know there are 7 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
+console.log("%cHint : 3 of them are based on famous linux utility commands (da../ne....../wh....), and the other 4 are based off of eosis's personal interests (ze...../ca./me.../mo..).","font-size:10px;color:grey")
