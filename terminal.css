@@ -32,6 +32,11 @@ body {
   display: block;
 }
 
+#underline {
+  text-decoration: underline;
+
+}
+
 a {
   all: unset;
   cursor: pointer;
