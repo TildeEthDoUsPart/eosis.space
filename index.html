@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="terminal.css">
-    <link rel="stylesheet" href="dimmed.css">
+    <link rel="stylesheet" href="themes.css">
     <link rel="stylesheet" href="floating.css">
     <link rel="shortcut icon" href="./assets/icon.svg" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 
     <meta name="theme-color" content="#1e1f22">
 </head>
-<body>
+<body data-theme="">
   <div id="wrapper">
     <div id="terminal" onclick="$('#commandBox').focus()">
       <div id="commandDisplay"></div>
@@ -39,14 +39,14 @@
     <div id="floating" class="unselectable hide-menu">
       <span id="tooltip" class="unselectable hide-menu">terminal</span>
       <div id="iconbar" class="unselectable hide-menu">
-        <a href="https://blog.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/blog.svg" data-tooltip="blog"></a>
-        <a href="https://ui.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/ui.svg" data-tooltip="ui"></a>
-        <a href="https://weather.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/weather.svg" data-tooltip="weather"></a>
-        <a href="https://pokedex.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/pokedex.svg" data-tooltip="pokedex"></a>
         <a href="https://patch.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/patch.svg" data-tooltip="patch"></a>
         <a href="https://chillzone.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/chillzone.svg" data-tooltip="chillzone"></a>
+        <a href="https://weather.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/weather.svg" data-tooltip="weather"></a>
+        <a href="https://ui.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/ui.svg" data-tooltip="ui"></a>
         <a href="https://tinyspace.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/tinyspace.svg" data-tooltip="tinyspace"></a>
+        <a href="https://eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/icon.svg" data-tooltip="terminal"></a>
         <a href="https://games.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/games.svg" data-tooltip="games"></a>
+        <a href="https://blog.eosis.space" class="appbar"><img class="unselectable notch hide-menu" src="assets/blog.svg" data-tooltip="blog"></a>
       </div>
     </div>
   </div>

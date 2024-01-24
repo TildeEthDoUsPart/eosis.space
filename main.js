@@ -16,11 +16,14 @@ let commands = {
     "neofetch" : neofetch, //secret
     "projects" : projects,
     "error" : error,
+    "themeswitch" : themeswitch,
     "moons" : moons, //secret
     "clear" : clear,
     "cls" : clear,
     "reload" : reload,
     "r" : reload,
+    "theme" : theme,
+    "themes" : theme,
     "date" : date, //secret
     "help" : help,
     "repo" : repo,
@@ -32,6 +35,8 @@ let commands = {
     "blog" : blog,
     "neofetch": neofetch // secret
 }
+
+let themes = ["remotework","crimsonisles","adrenaline","canopy","blocks","stringtheory","ayu","witchcraft","oxygen","kyoto"]
 
 let commandBox = $('#commandBox')
 let commandDisplay = $('#commandDisplay')
@@ -54,8 +59,10 @@ commandBox.on("keydown",function(evt) { // 'Enter' key is pressed
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
             historyIndex = -1   
+            command = commandBox.val().split(' ')
+            console.log(command)
             commandHistory.unshift(commandBox.val()) // Push command into history
-            submitCommand(commandBox.val(),commandHistory[0]) // Send command to validation before parsing
+            submitCommand(command,commandHistory[0]) // Send command to validation before parsing
         }
     } else if (evt.keyCode == 38){ // 'Up' key is pressed
         historyIndex = clamp(historyIndex+1,-1,commandHistory.length) // Making sure we are not exceeding the limits of the history and causing a null index error
@@ -99,9 +106,6 @@ function displayDate(){ // &func for date command
 }
 
 function updateUptime(){ // &func for neofetch command
-    console.log(start)
-    console.log(Date.now())
-    console.log(Date.now() - start)
     uptime = Date.now() - start
     msToTime(uptime)
 }
@@ -133,14 +137,18 @@ function msToTime(ms) { // &func for neofetch command
 
 
 function submitCommand(command,value){
-    commandBox.val("")
-    if (command in commands){ // Command does exist
+    console.log(command)
+    if (themes.includes(command[1]) && ["theme","themes"].includes(command[0])) {
+        switch_theme(command[1],value)
+        return
+    } else if (command[0] in commands && command.length === 1){ // Command does exist
         commandDisplay.append(commandPrefix + "<span id='command'>" + value + "</span><br><br>") // Writing command name to the now-old command input
-        print_command(command,value)
+        print_command(command[0],value)
     } else { // Command des not exist
         commandDisplay.append(commandPrefix + "<span id='error'>" + value + "</span><br><br>")
         print_command("error",value)
     }
+    commandBox.val("")
 }
 
 function print_command(command,value){
@@ -170,7 +178,14 @@ function print_command(command,value){
     commandBox.get(0).scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" }); // Smoothing only supported on Chrome (or Opera?)
 }
 
-
+function switch_theme(theme,value) {
+    console.log('theme change detected')
+    commandDisplay.append(commandPrefix + "<span id='command'>" + value + "</span><br><br>")
+    print_command("themeswitch",value)
+    commandBox.val("")
+    $('body').attr("data-theme",theme)
+    localStorage.setItem('theme',theme)
+}
 
 
 //---------//
@@ -182,7 +197,12 @@ function print_command(command,value){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
+if (localStorage.getItem(('theme')) === null){
+    $('body').attr("data-theme","witchcraft")
 
+} else {
+    $('body').attr("data-theme",localStorage.getItem(('theme')))
+}
 sleep(100).then(() => {print_command("motd","motd")})
 console.log("%cDid you know there are 7 hidden commands ? Try to find them !","color:#dfa00b;font-size:20px")
 console.log("%cHint : 3 of them are based on famous linux utility commands (da../ne....../wh....), and the other 4 are based off of eosis's personal interests (ze...../ca./me.../mo..).","font-size:10px;color:grey")

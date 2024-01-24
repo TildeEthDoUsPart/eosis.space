@@ -14,6 +14,7 @@ help = [
     "<span id='command'>repo</span> : view github repo for this site",
     "<span id='command'>motd</span> : display the motd header",
     "<span id='command'>clear</span>/<span id='command'>cls</span> : clear the terminal",
+    "<span id='command'>theme</span>/<span id='command'>themes</span> : see list / change terminal theme",
     "<span id='command'>reload</span>/<span id='command'>r</span> : reload the terminal",
     "<span id='command'>history</span> : command history",
     "<span id='command'>help</span> : get a list of all available commands"
@@ -241,6 +242,19 @@ meow = [
 
 reload = [
     "&func reloadPage"
+]
+
+theme = [
+    "themes available : ",
+    " ",
+    "light : canopy, stringtheory, oxygen, kyoto",
+    "dark :  ayu, adrenaline, blocks, crimsonisles, witchcraft",
+    " ",
+    "example : <span id='command'>theme oxygen</span>",
+]
+
+themeswitch = [
+    "Theme switched !"
 ]
 
 
