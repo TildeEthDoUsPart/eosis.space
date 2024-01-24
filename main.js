@@ -60,7 +60,6 @@ commandBox.on("keydown",function(evt) { // 'Enter' key is pressed
         if (commandBox.val() != ""){
             historyIndex = -1   
             command = commandBox.val().split(' ')
-            console.log(command)
             commandHistory.unshift(commandBox.val()) // Push command into history
             submitCommand(command,commandHistory[0]) // Send command to validation before parsing
         }
@@ -137,7 +136,6 @@ function msToTime(ms) { // &func for neofetch command
 
 
 function submitCommand(command,value){
-    console.log(command)
     if (themes.includes(command[1]) && ["theme","themes"].includes(command[0])) {
         switch_theme(command[1],value)
         return
@@ -179,7 +177,6 @@ function print_command(command,value){
 }
 
 function switch_theme(theme,value) {
-    console.log('theme change detected')
     commandDisplay.append(commandPrefix + "<span id='command'>" + value + "</span><br><br>")
     print_command("themeswitch",value)
     commandBox.val("")

@@ -19,7 +19,6 @@ function isMobile() {
     return check;
   };
 
-console.log(isMobile())
 if (isMobile()){ // On mobile, the link has to be tapped two times to trigger redirection. First tap shows the tooltip
     for (i=0;i<links.length;i++){
         links[i].addEventListener("click",(evt) => { // If the tooltip is equal to the link the user clicked, that means it is the last link pressed by user (double tap simulation)
