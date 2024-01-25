@@ -84,7 +84,7 @@ motd = [
     `(|| ||) &nbsp&nbsp&nbsp&nbsp \\___/\\____/____/_/____/  &nbsp v` + VERSION,
     `,""_""_ .  `,
     "<span id='accent'>Welcome to my terminal !</span>",
-    "Contact : hey@eosis.space",
+    "Contact : <a href='mailto:hey@eosis.space'>hey@eosis.space</a>",
     "---",
     "<span id='r'>Type '<span id='command'>help</span>' to get a list of all available commands.</span>",
     " ",
@@ -189,6 +189,8 @@ socials = [
     "<span id='highlight'><a href='https://twitch.com/eosis_' target='_blank'>Twitch</a></span> &nbsp&nbsp:&nbsp I stopped streaming but one day I'll stream myself progamming",
     " ",
     "<span id='highlight'><a href='https://ko-fi.com/eosiswastaken' target='_blank'>Ko-fi</a></span> &nbsp&nbsp :&nbsp If you ever have spare change......",
+    " ",
+    "Contact&nbsp&nbsp:&nbsp <a href='mailto:hey@eosis.space'>hey@eosis.space</a>",
 ]
 
 projects = [
