@@ -31,6 +31,7 @@ my personnal webpage and portfolio made with Javascript and jQuery. I've always 
 - themes
 - animated menu bar to navigate between projects
 - clean code
+- localStorage user settings saving
 - lighthouse optimized (xx/100) (soon)
 - meta tags
 - secret commands
