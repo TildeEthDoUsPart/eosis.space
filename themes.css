@@ -7,13 +7,13 @@
     --highlight: #d8dcb4;
 }
 
-[data-theme='crimsonisles'] {
-    --background: #3a0000  ;
-    --text: #ff933a;
-    --accent: #ffce59 ;
-    --error: #e21c51;
-    --command: #e04217;
-    --highlight: #c02b18 ;
+[data-theme='sugar'] {
+    --background: #292831  ;
+    --text: #fbbbad;
+    --accent: #00b9be ;
+    --error: #ff6973;
+    --command: #4a7a96;
+    --highlight: #ffeecc ;
 }
 
 [data-theme='adrenaline'] {

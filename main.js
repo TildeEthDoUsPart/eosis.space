@@ -36,7 +36,7 @@ let commands = {
     "neofetch": neofetch // secret
 }
 
-let themes = ["remotework","crimsonisles","adrenaline","canopy","blocks","stringtheory","ayu","witchcraft","oxygen","kyoto","onelight","onedark"]
+let themes = ["remotework","sugar","adrenaline","canopy","blocks","stringtheory","ayu","witchcraft","oxygen","kyoto","onelight","onedark"]
 
 let commandBox = $('#commandBox')
 let commandDisplay = $('#commandDisplay')

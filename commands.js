@@ -248,7 +248,7 @@ theme = [
     "themes available : ",
     " ",
     "light : canopy, stringtheory, oxygen, kyoto, onelight",
-    "dark :  ayu, adrenaline, blocks, crimsonisles, witchcraft, onedark",
+    "dark :  ayu, adrenaline, blocks, sugar, witchcraft, onedark",
     " ",
     "example : <span id='command'>theme oxygen</span>",
 ]
