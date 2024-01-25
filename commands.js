@@ -25,7 +25,7 @@ about = [
     "I'm a CS enthusiast and <span id='accent'>web developer</span> who loves coding, tinkering and learning.",
     "I started to code when I was 10 (as a hobby), and I've been really into it for 2 years now.",
     "Currently, I am in France, at <span id='accent'>EPSI</span> studying CS, and will soon get a work/study contract.", 
-    "Loving building websites and apps, and paying attention to the <span id='accent'>details</span> to craft perfect user experiences.",
+    "Loving building websites and webapps and paying attention to the <span id='accent'>details</span> to craft perfect user (and developer) experiences.",
     "As the days go by, I try to learn new things, and work on my current projects, while having more and more ideas.",
     " ",
     "Playing <span id='accent'>video games</span> sometimes, even though I've greatly reduced my playing time to code more.",
