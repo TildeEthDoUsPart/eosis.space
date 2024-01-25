@@ -79,6 +79,24 @@
     --highlight: #708bd4;
 }
 
+[data-theme='onelight'] {
+    --background: #fafafa ;
+    --text: #35363e;
+    --accent: #007fb9;
+    --error: #e24c3e;
+    --command: #469f4b ;
+    --highlight: #b751b5;
+}
+
+[data-theme='onedark'] {
+    --background: #282c34 ;
+    --text: #abb2bf;
+    --accent: #98c379;
+    --error: #e06c75;
+    --command: #c678dd ;
+    --highlight: #e5c07b;
+}
+
 
 
 body {

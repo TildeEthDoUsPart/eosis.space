@@ -247,8 +247,8 @@ reload = [
 theme = [
     "themes available : ",
     " ",
-    "light : canopy, stringtheory, oxygen, kyoto",
-    "dark :  ayu, adrenaline, blocks, crimsonisles, witchcraft",
+    "light : canopy, stringtheory, oxygen, kyoto, onelight",
+    "dark :  ayu, adrenaline, blocks, crimsonisles, witchcraft, onedark",
     " ",
     "example : <span id='command'>theme oxygen</span>",
 ]
