@@ -1,6 +1,9 @@
 body {
     font-family: cursor, monospace;
     font-size: 16px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #terminal {
@@ -10,6 +13,7 @@ body {
     max-height: 98vh;
     width: 190vw;
 }
+
 #commandLine {
     display: flex;
     align-items: center;
@@ -44,6 +48,11 @@ a {
 
 pre {
   line-height: 0px;
+}
+
+svg {
+  width: 16px;
+  height: 16px;
 }
 
 @media only screen and (max-width : 812px) {

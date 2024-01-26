@@ -138,6 +138,10 @@ body {
     color:var(--error)
 }
 
+svg {
+    fill: var(--text)
+}
+
 
 
 /* DO NOT CHANGE */
