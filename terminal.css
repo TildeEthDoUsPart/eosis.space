@@ -50,11 +50,6 @@ pre {
   line-height: 0px;
 }
 
-svg {
-  width: 16px;
-  height: 16px;
-}
-
 @media only screen and (max-width : 812px) {
   #commandDisplay {
     width: 50%;
