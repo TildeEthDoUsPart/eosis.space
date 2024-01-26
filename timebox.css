@@ -8,12 +8,6 @@
     flex-direction: column;
 }
 
-#day {
-    margin-bottom: 0px;
-    margin-top: 0px;
-
-}
-
 #status {
     margin-top: 0px;
     margin-right: 0 ;
@@ -21,7 +15,7 @@
     z-index: 999;
 }
 
-#hour {
+#day,#hour,#activity1,#activity2 {
     margin-top: 0px;
     margin-right: 0 ;
     margin-left: auto;
@@ -33,7 +27,10 @@
 #discord {
     display: flex;
     align-items: center;
+    z-index: 999;
 }
+
+
 
 
 svg {
@@ -41,4 +38,21 @@ svg {
     height: 16px;
     margin-left: auto;
     margin-right: 4px;
-  }
+    pointer-events: all;
+    z-index: 999;
+}
+
+path {
+    z-index: 999;
+}
+
+
+
+#activity1.show-activity,#activity2.show-activity {
+    opacity: 0.5;
+}
+
+#activity1.hide-activity,#activity2.hide-activity{
+    opacity: 0;
+}
+
