@@ -1,0 +1,44 @@
+#timebox {
+    display: flex;
+}
+
+#time {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#day {
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+#status {
+    margin-top: 0px;
+    margin-right: 0 ;
+    margin-bottom: 0;
+    z-index: 999;
+}
+
+#hour {
+    margin-top: 0px;
+    margin-right: 0 ;
+    margin-left: auto;
+    margin-bottom: 0;
+    z-index: 999;
+
+}
+
+#discord {
+    display: flex;
+    align-items: center;
+}
+
+
+svg {
+    width: 16px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: 4px;
+  }
