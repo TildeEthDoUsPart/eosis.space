@@ -178,7 +178,9 @@ date = [
 ]
 
 socials = [
-    "<span id='highlight'><a href='https://github.com/eosiswastaken' target='_blank'>GitHub</a></span> &nbsp&nbsp:&nbsp See my latest projects and contributions",
+    "<span id='highlight'><a href='https://discord.com/user/90482004435271680' target='_blank'>Discord</a></span> &nbsp&nbsp:&nbsp Contact me here, or by email (preferred)",
+    " ",
+    "<span id='highlight'><a href='https://github.com/eosiswastaken' target='_blank'>GitHub</a></span> &nbsp&nbsp:&nbsp Check out my latest projects and contributions",
     " ",
     "<span id='highlight'><a href='https://youtube.com/@eosiswastaken' target='_blank'>Youtube</a></span> &nbsp:&nbsp Random (but well-made) videos and essays",
     " ",
