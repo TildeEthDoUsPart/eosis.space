@@ -42,12 +42,19 @@ for (i=0;i<notches.length;i++){
 }
 }
 
+function isOnMenu(elt){
+    if (elt.target){
+        return elt.target.classList.contains("show-menu")
+    }
+}
+
 window.addEventListener('mousemove',(evt) => {
     quarter = window.innerHeight / 4
     height = window.innerHeight
     fifth = window.innerWidth / 5
     width = window.innerWidth
-    if ((evt.clientY > height-quarter) && ((width-fifth*3 < evt.clientX) && (evt.clientX < width-fifth*2)) || evt.target.classList.contains("show-menu")){ // Checking is user is on the bottom (middle fifth of the screen width AND last quarter of the screen's height) of the screen OR still in the menu (edge case for small screens where part of the menu would be outside the first condition's range)
+    
+    if ((evt.clientY > height-quarter) && ((width-fifth*3 < evt.clientX) && (evt.clientX < width-fifth*2)) || (isOnMenu(evt.target))){ // Checking is user is on the bottom (middle fifth of the screen width AND last quarter of the screen's height) of the screen OR still in the menu (edge case for small screens where part of the menu would be outside the first condition's range)
         if (!animationPlaying && !iconbar.hasClass('show-menu')){ // Trying to show menu, making sure it is not already shown and an animation is not currently palying
             animationPlaying = true
             iconbar.addClass('show-menu').removeClass('hide-menu')
