@@ -128,7 +128,7 @@ function msToTime(ms) { // &func for neofetch command
     
     const result = [dayText, hourText, minutesText].filter(Boolean).join(', '); // If value is not null (false) then join it to the result
     
-    neofetch[5] = `<pre>     <span id="nfred">it::::tt333EEF</span> <span id="nfgreen">@EEEEEEttttt33F</span>    Uptime: ${result.length > 0 ? result : 'less than a minute'}</pre>`
+    neofetch[5] = `<pre>     <span id="nfred">it::::tt333EEF</span> <span id="nfgreen">@EEEEEEttttt33F</span>    Uptime: ${result.length > 0 ? result : '< 1 min'}</pre>`
 }
 
 
