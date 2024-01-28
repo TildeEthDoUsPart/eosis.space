@@ -44,6 +44,7 @@ let commandPrefix = '<label id="commandPrefix">visitor@eosis.space:~$ </label>'
 
 let commandHistory = []
 let historyIndex = -1
+let commands_printed = 0
 
 const clamp = (num, min, max) => Math.min(Math.max(num, min), max); // Keep value between two points
 
@@ -58,9 +59,12 @@ const clamp = (num, min, max) => Math.min(Math.max(num, min), max); // Keep valu
 commandBox.on("keydown",function(evt) { // 'Enter' key is pressed
     if (evt.keyCode == 13){
         if (commandBox.val() != ""){
+            trimmed = commandBox.val().trim()
             historyIndex = -1   
-            command = commandBox.val().split(' ')
-            commandHistory.unshift(commandBox.val()) // Push command into history
+            command = trimmed.split(' ')
+            command = command.map(arg => arg.trim())
+            console.log(command)
+            commandHistory.unshift(commandBox.val().trim()) // Push command into history
             submitCommand(command,commandHistory[0]) // Send command to validation before parsing
         }
     } else if (evt.keyCode == 38){ // 'Up' key is pressed
@@ -149,7 +153,10 @@ function submitCommand(command,value){
     commandBox.val("")
 }
 
+
 function print_command(command,value){
+    commands_printed += 1
+    updateTimebox()
     if (command === "neofetch"){ // Updating time right before printing the command
         updateUptime()
     }
@@ -188,6 +195,11 @@ function switch_theme(theme,value) {
 //---------//
 // HELPERS //
 //---------//
+
+
+$( window ).on( "resize", function() {
+    updateTimebox()
+  } );
 
 
 
