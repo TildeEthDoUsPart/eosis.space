@@ -33,7 +33,7 @@ let activities = $('.activities')
 async function updatePresence(){
   const res = await fetch('https://api.lanyard.rest/v1/users/290482004435271680')
   await res.json().then((rpc) => {
-    discord.text(statuses[rpc.data.discord_status])
+    discord.text(`${statuses[rpc.data.discord_status]} ${(!localStorage.getItem("presenceTooltip") && rpc.data.activities[1] !== undefined) ? " (click me!)" : ""}`)
     if (rpc.data.activities[1] !== undefined) {
 
       switch (rpc.data.activities[1].name) {
@@ -66,6 +66,10 @@ async function updatePresence(){
 }
 
 function showActivity(){
+  if (!localStorage.getItem("presenceTooltip")){
+    localStorage.setItem("presenceTooltip",true)
+  }
+  discord.text(discord.text().split(' ')[0])
   activities.toggleClass('hide-activity')
   activities.toggleClass('show-activity')
 }
