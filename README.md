@@ -43,7 +43,7 @@ my personnal webpage and portfolio made with Javascript and jQuery. I've always 
 
 👉 Adding themes
 
-Each theme is contained in 6 self-explanatory CSS variables, defined in the `themes.css` file. The variables are wrapped inside a `data-theme` selector, where the value of the selector is the name of your theme. This is used to switch themes and apply the rules when switching.
+Each theme is contained in 6 self-explanatory CSS variables, defined in the `themes.css` file. The variables are wrapped inside a `data-theme` selector, where the value of the selector is the name of your theme. This is used to switch themes and apply the rules when switching. Feel free to use other CSS rules and variables if you want to make a more complex theme.
 
 
 ```css
