@@ -33,8 +33,6 @@ let activities = $('.activities')
 async function updatePresence(){
   const res = await fetch('https://api.lanyard.rest/v1/users/290482004435271680')
   await res.json().then((rpc) => {
-    console.log(rpc.data.activities[1] !== undefined)
-    console.log(rpc.data.activities[1])
     discord.text(statuses[rpc.data.discord_status])
     if (rpc.data.activities[1] !== undefined) {
 
@@ -73,6 +71,15 @@ function showActivity(){
 }
 
 
+function updateTimebox(){
+  if (window.innerWidth < 1450 && commands_printed >= 2){ // Hiding timebox if there is a risk of overlapping with the text
+      $('#timebox').addClass('hide-timebox')
+      $('#timebox').removeClass('show-timebox')
+  } else {
+      $('#timebox').removeClass('hide-timebox')
+      $('#timebox').addClass('show-timebox')
+  }
+}
 
 
 day.text(`${dayFormatter.format(new Date())} at UTC+1`)
@@ -90,3 +97,5 @@ setInterval(() => {
   updatePresence()
 
 }, 10000);
+
+
