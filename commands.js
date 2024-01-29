@@ -9,6 +9,7 @@ help = [
     "<span id='command'>setup</span> : my setup and uses",
     "<span id='command'>blog</span> : my personal blog",
     "<span id='command'>projects</span> : some of my programming projects",
+    "<span id='command'>projects</span> : check out my non-programming projects",
     "<span id='command'>skills</span> : check out the skills I have",
     "<span id='command'>socials</span> : my social networks",
     "<span id='command'>repo</span> : view github repo for this site",
@@ -218,6 +219,14 @@ projects = [
     " ",
     "<span id='underline'><a href='https://github.com/eosiswastaken/instameme' target='_blank'>instameme</a></span> - social network website with working auth, posting, likes and commenting made with PHP"
 ]
+
+works = [
+    "<span id='underline'><a href='https://www.youtube.com/watch?v=eruBfETy5rQ' target='_blank'>montgiscard warfare trailer</a></span> - smash bros tournament trailer, made for a friend's (oxyzz) tournament",
+    " ",
+    "<span id='underline'><a href='https://www.youtube.com/watch?v=gvIFhU8294M&t=8s' target='_blank'>lui, c'est zerator.</a></span> - ZeratoR (famous french streamer) edit, inspired by the 'this is elon musk' meme",
+    
+]
+
 
 function getSkillIcons(){
     if (window.innerWidth <= 618){

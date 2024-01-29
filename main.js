@@ -15,6 +15,7 @@ let commands = {
     "motd" : motd,
     "neofetch" : neofetch, //secret
     "projects" : projects,
+    "works" : works,
     "error" : error,
     "themeswitch" : themeswitch,
     "moons" : moons, //secret
