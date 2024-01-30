@@ -97,7 +97,23 @@
     --highlight: #e5c07b;
 }
 
+[data-theme='catppuccin-latte'] {
+    --background: #eff1f5 ;
+    --text: #4c4f69;
+    --accent: #dc8a78;
+    --error: #e64553;
+    --command: #209fb5 ;
+    --highlight: #acb0be;
+}
 
+[data-theme='catppuccin-macchiato'] {
+    --background: #24273A;
+    --text: #CAD3F5;
+    --accent: #dc8a78;
+    --error: #ED8796;
+    --command: #B8C0E0 ;
+    --highlight: #363A4F;
+}
 
 body {
     background-color: var(--background);
