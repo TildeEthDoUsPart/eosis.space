@@ -93,7 +93,7 @@
     --text: #abb2bf;
     --accent: #98c379;
     --error: #e06c75;
-    --command: #c678dd ;
+    --command: #c678dd;
     --highlight: #e5c07b;
 }
 
@@ -102,7 +102,7 @@
     --text: #4c4f69;
     --accent: #dc8a78;
     --error: #e64553;
-    --command: #209fb5 ;
+    --command: #209fb5;
     --highlight: #acb0be;
 }
 
@@ -111,9 +111,28 @@
     --text: #CAD3F5;
     --accent: #dc8a78;
     --error: #ED8796;
-    --command: #B8C0E0 ;
+    --command: #B5BFE2;
     --highlight: #363A4F;
 }
+
+[data-theme='catppuccin-frappe'] {
+    --background: #303446;
+    --text: #C6D0F5;
+    --accent: #dc8a78;
+    --error: #E78284;
+    --command: #B8C0E0 ;
+    --highlight: #51576D;
+}
+
+[data-theme='catppuccin-mocha'] {
+    --background: #1E1E2E;
+    --text: #CDD6F4;
+    --accent: #dc8a78;
+    --error: #F38BA8;
+    --command: #BAC2DE;
+    --highlight: #45475A;
+}
+
 
 body {
     background-color: var(--background);
