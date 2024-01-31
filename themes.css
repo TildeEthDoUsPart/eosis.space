@@ -133,6 +133,14 @@
     --highlight: #45475A;
 }
 
+[data-theme='citypop'] {
+    --background: #26294d;
+    --text: #fca6d1;
+    --accent: #f1bf4a;
+    --error: #f67667;
+    --command: #ebdbb2;
+    --highlight: #5a3253;
+}
 
 body {
     background-color: var(--background);
